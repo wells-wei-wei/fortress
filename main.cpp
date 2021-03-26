@@ -8,6 +8,9 @@ using namespace std;
 deque<string> ECC2TM;
 deque<string> TM2ECC;
 
+deque<string> TM2T;
+deque<string> T2TM;
+
 class EdgeCloudColla{
 public:
     EdgeCloudColla(string serviceName, string myName, string group):serviceName(serviceName){
@@ -44,9 +47,11 @@ class TaskManager{
     void run(){
         
     }
-    int getTaskKind(){
+    int getTaskId(){
 
     }
+private:
+    int taskId;
 };
 
 class test{
